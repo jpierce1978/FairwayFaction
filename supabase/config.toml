@@ -1,0 +1,13 @@
+# Minimal Supabase CLI project config. Run `supabase start` then `supabase db reset` to apply migrations.
+project_id = "fairwayfaction"
+
+[db]
+major_version = 15
+
+[auth]
+site_url = "fairwayfaction://"
+additional_redirect_urls = ["fairwayfaction://"]
+enable_signup = true
+
+[auth.email]
+enable_confirmations = false

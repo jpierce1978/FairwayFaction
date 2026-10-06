@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RGB channel triplets so Tailwind opacity modifiers work. Mirror: src/design/tokens/colors.ts */
+:root {
+  --color-background: 246 247 242;
+  --color-surface: 255 255 255;
+  --color-surface-muted: 236 239 230;
+  --color-border: 190 198 182;
+  --color-content: 17 24 28;
+  --color-content-muted: 69 80 90;
+  --color-primary: 22 101 52;
+  --color-on-primary: 255 255 255;
+  --color-accent: 146 98 0;
+  --color-on-accent: 255 255 255;
+  --color-success: 21 128 61;
+  --color-warning: 161 98 7;
+  --color-danger: 185 28 28;
+  --color-on-danger: 255 255 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: 12 18 15;
+    --color-surface: 22 31 26;
+    --color-surface-muted: 31 43 36;
+    --color-border: 63 82 71;
+    --color-content: 244 247 245;
+    --color-content-muted: 178 192 184;
+    --color-primary: 74 201 125;
+    --color-on-primary: 6 26 14;
+    --color-accent: 240 183 64;
+    --color-on-accent: 36 24 0;
+    --color-success: 74 222 128;
+    --color-warning: 250 204 21;
+    --color-danger: 248 113 113;
+    --color-on-danger: 40 4 4;
+  }
+}

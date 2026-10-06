@@ -1,0 +1,7 @@
+# Authoritative specs are never reformatted
+docs/UX_SPEC.md
+docs/SCREEN_CONTRACTS.md
+docs/DOMAIN_MAP.md
+package-lock.json
+.expo/
+dist/
