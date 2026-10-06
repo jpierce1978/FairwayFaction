@@ -34,6 +34,9 @@ With no `EXPO_PUBLIC_SUPABASE_*` values the app runs against an **in-memory mock
 | `npm run format`           | Prettier (specs in `docs/` are excluded and must never be reformatted) |
 | `npx expo install --check` | verify dependency versions against the SDK                             |
 
+CI (`.github/workflows/ci.yml`) runs the same steps on every push and pull request: `npm ci`, typecheck, lint,
+`prettier --check .`, `test:app`, `test:db`. It has no deploy or publish steps.
+
 Always add native-compatible dependencies with `npx expo install <pkg>`, not `npm i`.
 
 ## Supabase
